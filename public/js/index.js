@@ -2,7 +2,6 @@ const socket = io();
 
 socket.emit("mensaje", "Mensaje recibido desde el cliente");
 
-// Solicita al servidor los productos para renderizar por primera vez, get Products emite un receiveProducts que envia los products al cliente; al escuchar el receiveProducts llama a RenderProducts
 getProducts();
 
 socket.on("receiveProducts", (products) => {
@@ -17,9 +16,9 @@ function addProduct() {
   formData.append("code", document.getElementById("code").value);
   formData.append("stock", document.getElementById("stock").value);
   formData.append("category", document.getElementById("category").value);
-  formData.append("thumbnails", document.getElementById("thumbnails").files[0]); // Append the file
+  formData.append("thumbnails", document.getElementById("thumbnails").files[0]);
 
-  socket.emit("addProduct", formData); // Send FormData to the server
+  socket.emit("addProduct", formData);
 
   // Reset form fields
   document.getElementById("title").value = "";

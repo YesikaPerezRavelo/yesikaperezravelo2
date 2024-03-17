@@ -19,14 +19,69 @@ app.set("view engine", "handlebars");
 
 //BIENVENIDA
 app.get("/", (req, res) => {
-  res.send("Bievenido");
+  res.send(`
+    <html>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+      <head>
+        <title>Bienvenido a nuestra tienda en línea</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            font-family: "Montserrat", sans-serif;
+          }
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          h1 {
+            color: #333;
+          }
+          p {
+            color: #666;
+          }
+          .button {
+            background-color: #d78383;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: "Montserrat", sans-serif;
+          }
+          button:hover {
+            background-color: rgb(10, 3, 3);
+            color: white;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Welcome to our clases online</h1>
+          <p>Are you searching for a class or do you want to post your class online?</p>
+          <div>
+            <button class="button" onclick="window.location.href='/api/products'">List of classes</button>
+            <button class="button" onclick="window.location.href='/realtimeproducts'">Coach post your class</button>
+          </div>
+        </div>
+      </body>
+    </html>
+  `);
 });
 
-//ROUTES
 app.use("/api/products", productsRouter);
 app.use("/api/carts", cartsRouter);
 
-//PORT LISTEN
 const port = 8080;
 const httpServer = app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

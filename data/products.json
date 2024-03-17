@@ -1,86 +1,92 @@
 [
   {
     "id": 1,
-    "title": "Producto editado desde PUT",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnail": "Sin imagen",
-    "code": "abc1234",
-    "stock": 25
-  },
-  {
-    "id": 4,
-    "title": "producto prueba4",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnail": "Sin imagen",
-    "code": "abc123456",
-    "stock": 25
-  },
-  {
-    "id": 6,
-    "title": "Nuevo Producto",
-    "description": "Descripción del nuevo producto",
-    "code": "newproduct123",
-    "price": 150,
-    "status": true,
-    "stock": 20,
-    "category": "Electronics",
-    "thumbnails": []
-  },
-  {
-    "id": 8,
-    "title": "productoform",
-    "description": "metido desde el form",
-    "price": "20",
-    "status": true,
-    "thumbnails": "asdsad",
-    "code": "231243",
-    "stock": "23",
-    "category": "remera"
-  },
-  {
-    "id": 9,
-    "title": "producto prueba 5",
-    "description": "producto de prueba",
-    "price": "40",
-    "status": true,
-    "thumbnails": "imagen2",
-    "code": "232123",
-    "stock": "54",
-    "category": "remera"
-  },
-  {
-    "id": 10,
-    "title": "producto prueba 3",
-    "description": "producto 3",
-    "price": "20",
-    "status": true,
-    "thumbnails": "asdsad",
-    "code": "121389431",
-    "stock": "23",
-    "category": "remera"
-  },
-  {
-    "id": 11,
-    "title": "agregadodeForm",
-    "description": "descrpition",
-    "price": "2000",
-    "status": true,
-    "thumbnails": "imagencita",
-    "code": "23191238",
-    "stock": "23",
-    "category": "remera"
-  },
-  {
-    "id": 12,
     "title": "titulo1",
     "description": "descripcion1",
     "price": "100",
-    "status": true,
-    "thumbnails": "1",
+    "thumbnail": "public\\img\\image1.webp",
     "code": "abc121",
-    "stock": "10",
-    "category": "1"
+    "stock": "10"
+  },
+  {
+    "id": 2,
+    "title": "titulo2",
+    "description": "descripcion2",
+    "price": "200",
+    "thumbnail": "public\\img\\image2.webp",
+    "code": "abc122",
+    "stock": "20"
+  },
+  {
+    "id": 3,
+    "title": "titulo3",
+    "description": "descripcion3",
+    "price": "300",
+    "thumbnail": "public\\img\\image3.webp",
+    "code": "abc123",
+    "stock": "30"
+  },
+  {
+    "id": 4,
+    "title": "titulo4",
+    "description": "descripcion4",
+    "price": "400",
+    "thumbnail": "public\\img\\image4.webp",
+    "code": "abc124",
+    "stock": "40"
+  },
+  {
+    "id": 5,
+    "title": "titulo5",
+    "description": "descripcion5",
+    "price": "500",
+    "thumbnail": "public\\img\\image5.webp",
+    "code": "abc125",
+    "stock": "50"
+  },
+  {
+    "id": 6,
+    "title": "titulo6",
+    "description": "descripcion6",
+    "price": "600",
+    "thumbnail": "public\\img\\image6.webp",
+    "code": "abc126",
+    "stock": "60"
+  },
+  {
+    "id": 7,
+    "title": "titulo7",
+    "description": "descripcion7",
+    "price": "700",
+    "thumbnail": "public\\img\\image7.webp",
+    "code": "abc127",
+    "stock": "70"
+  },
+  {
+    "id": 8,
+    "title": "titulo8",
+    "description": "descripcion8",
+    "price": "800",
+    "thumbnail": "public\\img\\image8.webp",
+    "code": "abc128",
+    "stock": "80"
+  },
+  {
+    "id": 9,
+    "title": "titulo9",
+    "description": "descripcion9",
+    "price": "900",
+    "thumbnail": "public\\img\\image9.webp",
+    "code": "abc129",
+    "stock": "90"
+  },
+  {
+    "id": 10,
+    "title": "titulo10",
+    "description": "descripcion10",
+    "price": "1000",
+    "thumbnail": "public\\img\\image10.webp",
+    "code": "abc1210",
+    "stock": "100"
   }
 ]
