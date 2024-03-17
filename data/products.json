@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Producto editado desde PUT",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "code": "abc1234",
+    "stock": 25
+  },
+  {
+    "id": 4,
+    "title": "producto prueba4",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "code": "abc123456",
+    "stock": 25
+  },
+  {
+    "id": 6,
+    "title": "Nuevo Producto",
+    "description": "Descripción del nuevo producto",
+    "code": "newproduct123",
+    "price": 150,
+    "status": true,
+    "stock": 20,
+    "category": "Electronics",
+    "thumbnails": []
+  },
+  {
+    "id": 8,
+    "title": "productoform",
+    "description": "metido desde el form",
+    "price": "20",
+    "status": true,
+    "thumbnails": "asdsad",
+    "code": "231243",
+    "stock": "23",
+    "category": "remera"
+  },
+  {
+    "id": 9,
+    "title": "producto prueba 5",
+    "description": "producto de prueba",
+    "price": "40",
+    "status": true,
+    "thumbnails": "imagen2",
+    "code": "232123",
+    "stock": "54",
+    "category": "remera"
+  },
+  {
+    "id": 10,
+    "title": "producto prueba 3",
+    "description": "producto 3",
+    "price": "20",
+    "status": true,
+    "thumbnails": "asdsad",
+    "code": "121389431",
+    "stock": "23",
+    "category": "remera"
+  },
+  {
+    "id": 11,
+    "title": "agregadodeForm",
+    "description": "descrpition",
+    "price": "2000",
+    "status": true,
+    "thumbnails": "imagencita",
+    "code": "23191238",
+    "stock": "23",
+    "category": "remera"
+  },
+  {
+    "id": 12,
+    "title": "titulo1",
+    "description": "descripcion1",
+    "price": "100",
+    "status": true,
+    "thumbnails": "1",
+    "code": "abc121",
+    "stock": "10",
+    "category": "1"
+  }
+]

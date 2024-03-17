@@ -1,0 +1,27 @@
+<form id="addProductForm">
+  <input type="text" id="title" name="title" placeholder="Title" required />
+  <input
+    type="text"
+    id="description"
+    name="description"
+    placeholder="Description"
+    required
+  />
+  <input type="number" id="price" name="price" placeholder="Price" required />
+  <input
+    type="text"
+    id="thumbnails"
+    name="thumbnails"
+    placeholder="Thumbnails URL"
+  />
+  <input type="text" id="code" name="code" placeholder="Product Code" />
+  <input type="number" id="stock" name="stock" placeholder="Stock" />
+  <input type="text" id="category" name="category" placeholder="Category" />
+  <button type="button" onclick="addProduct()">Add Product</button>
+</form>
+
+<div id="products-container" class="product-grid">
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

@@ -1,0 +1,18 @@
+<div class="product-grid">
+  {{#each products}}
+    <div class="product-card">
+      <img
+        class="product-thumbnail"
+        src="{{this.thumbails}}"
+        alt="Product Thumbnail"
+      />
+      <div class="product-details">
+        <p class="product-title">{{this.title}}</p>
+        <p class="product-description">{{this.description}}</p>
+        <p class="product-price">{{this.price}}</p>
+        <p class="product-stock">{{this.stock}}</p>
+        <p class="product-code">{{this.code}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
