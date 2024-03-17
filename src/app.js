@@ -17,7 +17,6 @@ app.engine("handlebars", handlebars.engine());
 app.set("views", `${__dirname}/views`);
 app.set("view engine", "handlebars");
 
-//BIENVENIDA
 app.get("/", (req, res) => {
   res.send(`
     <html>
@@ -87,7 +86,6 @@ const httpServer = app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-// REAL TIME PRODUCTS
 app.get("/realtimeproducts", async (req, res) => {
   res.render("realTimeProducts", {
     style: "index.css",
@@ -95,7 +93,6 @@ app.get("/realtimeproducts", async (req, res) => {
   });
 });
 
-// SOCKET SERVER
 const socketServer = new Server(httpServer);
 socketServer.on("connection", (socket) => {
   console.log("Nuevo cliente conectado -----> ", socket.id);
