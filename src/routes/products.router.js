@@ -3,11 +3,11 @@ import ProductManager from "../utils/productManager.js";
 
 const router = Router();
 
-const productManagerInstance = new ProductManager("data/products.json");
+const PM = new ProductManager();
 
 router.get("/", async (req, res) => {
   let limit = +req.query.limit;
-  const products = await productManagerInstance.getProducts(limit);
+  const products = await PM.getProducts(limit);
   res.render("home", {
     style: "index.css",
     products: products,
@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 
 router.get("/:productId", async (req, res) => {
   let productId = +req.params.productId;
-  let product = await productManagerInstance.getProductById(productId);
+  let product = await PM.getProductById(productId);
 
   if (!product) {
     return res.send({ error: "Producto no encontrado" });
@@ -29,14 +29,13 @@ router.post("/", async (req, res) => {
   const { title, description, code, price, stock, category } = req.body;
 
   try {
-    await productManagerInstance.addProduct({
+    await PM.addProduct({
       title,
       description,
       code,
       price,
       status: true,
       stock,
-      category,
     });
   } catch (error) {
     console.error(error);
@@ -50,7 +49,7 @@ router.put("/:productId", async (req, res) => {
   const productData = req.body;
 
   try {
-    await productManagerInstance.updateProduct(productId, productData);
+    await PM.updateProduct(productId, productData);
   } catch (error) {
     console.error(error);
     res.status(400).send({ status: "error", error: "ha ocurrido un error" });
@@ -63,7 +62,7 @@ router.delete("/:productId", async (req, res) => {
   const productId = +req.params.productId;
 
   try {
-    await productManagerInstance.deleteProduct(productId);
+    await PM.deleteProduct(productId);
   } catch (error) {
     console.error(error);
     res.status(400).send({ status: "error", error: "ha ocurrido un error" });
