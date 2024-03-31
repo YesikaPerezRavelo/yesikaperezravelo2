@@ -88,5 +88,15 @@
     "thumbnail": "public\\img\\image10.webp",
     "code": "abc1210",
     "stock": "100"
+  },
+  {
+    "id": 11,
+    "title": "avds",
+    "description": "aksdcxmlk",
+    "price": "1",
+    "code": "123",
+    "stock": "10",
+    "thumbnail": [],
+    "status": true
   }
 ]

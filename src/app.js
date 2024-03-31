@@ -99,10 +99,14 @@ socketServer.on("connection", (socket) => {
 
   socket.on("addProduct", async (productData) => {
     await productManagerInstance.addProduct(productData);
+    const products = await productManagerInstance.getProducts();
+    socket.emit("receiveProducts", products);
   });
 
   socket.on("deleteProduct", async (productId) => {
     await productManagerInstance.deleteProduct(productId);
+    const products = await productManagerInstance.getProducts();
+    socket.emit("receiveProducts", products);
   });
 
   socket.on("getProducts", async () => {

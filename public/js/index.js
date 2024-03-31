@@ -9,25 +9,24 @@ socket.on("receiveProducts", (products) => {
 });
 
 function addProduct() {
-  const formData = new FormData();
-  formData.append("title", document.getElementById("title").value);
-  formData.append("description", document.getElementById("description").value);
-  formData.append("price", document.getElementById("price").value);
-  formData.append("code", document.getElementById("code").value);
-  formData.append("stock", document.getElementById("stock").value);
-  formData.append("category", document.getElementById("category").value);
-  formData.append("thumbnails", document.getElementById("thumbnails").files[0]);
+  const product = {
+    title: document.getElementById("title").value,
+    description: document.getElementById("description").value,
+    price: document.getElementById("price").value,
+    code: document.getElementById("code").value,
+    stock: document.getElementById("stock").value,
+  };
 
-  socket.emit("addProduct", formData);
+  console.log(product);
+
+  socket.emit("addProduct", product);
 
   // Reset form fields
   document.getElementById("title").value = "";
   document.getElementById("description").value = "";
   document.getElementById("price").value = "";
-  document.getElementById("thumbnails").value = "";
   document.getElementById("code").value = "";
   document.getElementById("stock").value = "";
-  document.getElementById("category").value = "";
 }
 
 function deleteProduct(productId) {
